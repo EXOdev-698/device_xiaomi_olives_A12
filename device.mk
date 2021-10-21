@@ -55,6 +55,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+	
+	# TinyXML
+PRODUCT_PACKAGES += \
+    libtinyxml
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/olives/olives-vendor.mk)
