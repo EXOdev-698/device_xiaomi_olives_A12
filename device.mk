@@ -60,7 +60,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/olives/olives-vendor.mk)
-$(call inherit-product, vendor/xiaomi/olives-common/olives-common-vendor.mk)
 
 # MOD: MiuiCamera
 ifneq ($(wildcard vendor/miuicamera),)
