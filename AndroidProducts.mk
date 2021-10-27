@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The aospOS Project
+# Copyright (C) 2021 The cherishOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_olives.mk
+    $(LOCAL_DIR)/cherish_olives.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_olives-user \
-    aosp_olives-userdebug \
-    aosp_olives-eng
+    cherish_olives-user \
+    cherish_olives-userdebug \
+    cherish_olives-eng
