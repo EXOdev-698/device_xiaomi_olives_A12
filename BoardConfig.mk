@@ -13,7 +13,7 @@ DEVICE_PATH := device/xiaomi/olives
 TARGET_OTA_ASSERT_DEVICE := olive,olivelite,olivewood,olives
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_olives

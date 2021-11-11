@@ -8,9 +8,7 @@
 $(call inherit-product, device/xiaomi/sdm439-common/sdm439.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1572
@@ -26,8 +24,8 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_sdm439_pm8953.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_sdm439_pm8953.xml
+    $(LOCAL_PATH)/configs/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_sdm439_pm8953.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_sdm439_pm8953.xml
 
 # Consumer IR
 PRODUCT_PACKAGES += \
